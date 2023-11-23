@@ -15,10 +15,10 @@ func main() {
 		FirstName: "Chuluunkhuu",
 	}
 
-	fmt.Println("Userinfo:", getUserInfo(user))
+	fmt.Println("Userinfo:", GetUserInfo(user))
 }
 
-func getUserInfo(user *User) string {
+func GetUserInfo(user *User) string {
 	userInfo := user.UserName + " " + user.FirstName + " " + user.LastName
 	return userInfo
 }
